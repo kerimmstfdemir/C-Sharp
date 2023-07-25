@@ -6,5 +6,10 @@ namespace b._Plane_Ticket_Reservation_System
         {
             InitializeComponent();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
