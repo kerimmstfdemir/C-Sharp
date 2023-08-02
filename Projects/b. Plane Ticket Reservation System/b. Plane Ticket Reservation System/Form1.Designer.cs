@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBox1 = new GroupBox();
+            label9 = new Label();
+            button2 = new Button();
             maskedTextBox1 = new MaskedTextBox();
             label4 = new Label();
             dateTimePicker1 = new DateTimePicker();
@@ -58,6 +60,8 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(maskedTextBox1);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(dateTimePicker1);
@@ -72,6 +76,26 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Flight Informations";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(304, 61);
+            label9.Name = "label9";
+            label9.Size = new Size(50, 18);
+            label9.TabIndex = 8;
+            label9.Text = "label9";
+            label9.Visible = false;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(256, 56);
+            button2.Name = "button2";
+            button2.Size = new Size(46, 29);
+            button2.TabIndex = 6;
+            button2.Text = "<>";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // maskedTextBox1
             // 
@@ -168,6 +192,7 @@
             button1.TabIndex = 2;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label7
             // 
@@ -223,6 +248,7 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
+            listBox1.HorizontalScrollbar = true;
             listBox1.ItemHeight = 18;
             listBox1.Location = new Point(31, 343);
             listBox1.Name = "listBox1";
@@ -306,5 +332,7 @@
         private Panel panel1;
         private Label label8;
         private PictureBox pictureBox1;
+        private Button button2;
+        private Label label9;
     }
 }
